@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Cliente } from '../../models/cliente';
 import { CommonModule } from '@angular/common';
-import { ClassNamePorValorPipe } from '../../pipes/class-name-por-valor.pipe';
+import { ClassNamePorValorPipe, ClassNameDeValor } from '../../pipes/class-name-por-valor.pipe';
 
 @Component({
   selector: 'app-consulta-saldo',
@@ -20,6 +20,12 @@ export class ConsultaSaldoComponent {
     99.99,
     new Date(),
   );
+
+  public creditoPreAprovadoClasses: ClassNameDeValor = {
+    zero: 'zero',
+    positivo: 'positivo destaque',
+    negativo: 'negativo',
+  };
 
 };
 

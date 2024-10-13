@@ -11,3 +11,7 @@
 .positivo{
   color: green;
 }
+
+.positivo.destaque{
+  font-weight: bold;
+}
