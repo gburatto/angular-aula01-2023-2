@@ -17,7 +17,9 @@
       <div>
         <b>Crédito pré-aprovado</b>:
         <span
-        [className]="cliente.creditoPreAprovado | classNamePorValor: creditoPreAprovadoClasses">
+          [className]="cliente.creditoPreAprovado | classNamePorValor: creditoPreAprovadoClasses"
+          appMensagemDeMouseOver="Deseja saber mais sobre o crédito? Visite abc.com/credito"
+        >
           {{ cliente.creditoPreAprovado | currency }}
         </span>
       </div>

@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { Cliente } from '../../models/cliente';
 import { CommonModule } from '@angular/common';
 import { ClassNamePorValorPipe, ClassNameDeValor } from '../../pipes/class-name-por-valor.pipe';
+import { MensagemDeMouseOverDirective } from '../../directives/mensagem-de-mouse-over.directive';
 
 @Component({
   selector: 'app-consulta-saldo',
   standalone: true,
   imports: [
     CommonModule,
-    ClassNamePorValorPipe
+    ClassNamePorValorPipe,
+    MensagemDeMouseOverDirective,
   ],
   templateUrl: './consulta-saldo.component.html',
   styleUrl: './consulta-saldo.component.css'
