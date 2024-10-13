@@ -15,7 +15,7 @@ export class ConsultaSaldoComponent {
 
   public cliente: Cliente = new Cliente(
     'Maria das Couves',
-    99.99,
+    -0.004,
     new Date(),
   );
 
