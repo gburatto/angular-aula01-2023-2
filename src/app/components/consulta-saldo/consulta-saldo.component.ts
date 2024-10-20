@@ -34,8 +34,8 @@ export class ConsultaSaldoComponent {
       new Date('2024-10-12 15:59:00'),
     ),
   ];
-  
-  public cliente: Cliente = this.clientes[0];  // Primeiro cliente selecionado por padrão.
+
+  public cliente?: Cliente;  // Nenhum cliente selecionado por padrão.
 
   public creditoPreAprovadoClasses: ClassNameDeValor = {
     zero: 'zero',
